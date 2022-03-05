@@ -1,4 +1,135 @@
 @charset "UTF-8";
 
-/* カード内の画像は以下のURLを使用して下さい */
-/* https://picsum.photos/id/1005/200/300 */
+.green_box {
+  width: 200px;
+  height: 200px;
+  background: #76ff826b;
+  margin: auto;
+}
+
+.blue_box {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  margin: auto;
+  transition: .5s;
+}
+
+
+.fadein {
+  animation: fadein 4s ease 0s 1 normal;
+}
+
+.fadeout {
+  animation: fadeout 4s ease 4s  1 normal;
+}
+
+.spin {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes fadeout {
+  100% {
+    opacity: 1
+  }
+  0% {
+    opacity: 0
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.change_color:hover {
+  background: #ff27e2c9;
+}
+
+.hover_spin:hover {
+  transform: rotate(360deg);
+}
+
+.hover_slide:hover {
+  transform: translate(0, -20%);
+}
+
+.hover_slide_right:hover {
+  transform: translate(50% ,0);
+}
+
+.extend_up:hover {
+  height: 300px;
+}
+
+.extend_side:hover {
+  width: 500px;
+}
+
+.hover_inline:hover {
+  border: 10px #00ffe5 solid;
+}
+
+.hover_inline:hover {
+  box-sizing: border-box;
+}
+
+.hover_shadow:hover {
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+
+.circle_spin {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  border: solid 10px #ecf1ec;
+  border-top: solid 10px #14ff14;
+  animation: spin 1.1s linear infinite;
+}
+
+.card_list {
+  display: flex;
+}
+
+.card_box {
+  width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #000;
+  border-left: 0;
+  transition: .5s;
+}
+
+.card_box:first-child {
+  border-left: 1px solid #000;
+}
+
+.card_box:hover {
+  box-shadow: 0px 10px 3px #424242d0;
+}
+
+.card_box > p {
+  margin-top: 20px;
+}
+
+.icon {
+  background: url(https://picsum.photos/id/1005/200/300) no-repeat center/cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
