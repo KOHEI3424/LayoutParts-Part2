@@ -9,16 +9,13 @@
 }
 
 .image_repeat {
-  background: url(../../image/coffee-background.jpg) ;
-  background-repeat: no-repeat;
+  background: url(../../image/coffee-background.jpg) no-repeat;
 }
 
 .image_center {
-  background: url(../../image/coffee-background.jpg) center/cover;
-  background-repeat: no-repeat;
+  background: url(../../image/coffee-background.jpg) no-repeat center/cover;
 }
 
 .image_center_fit {
-  background: url(../../image/coffee-background.jpg) center/contain;
-  background-repeat: no-repeat;
+  background: url(../../image/coffee-background.jpg) no-repeat center/contain;
 }
